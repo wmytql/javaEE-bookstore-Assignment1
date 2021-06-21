@@ -1,0 +1,104 @@
+package com.itstudy.util;
+
+
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Properties;
+
+/**
+ * 封装JDBCTools
+ * 获取连接或释放连接的工具类
+ */
+public class JDBCUtil {
+
+    private static DataSource ds;
+
+    static {
+        try {
+            //创建Properties对象
+            Properties pro = new Properties();
+            //将jdbc.properties中的数据加载到prop的内存中
+            pro.load(JDBCUtil.class.getClassLoader().getResourceAsStream("jdbc.properties"));
+            /**
+             * 通过DruidDataSourceFactory工厂类创建数据源
+             * 可以加载一个properties文件中的数据，创建一个相当应的数据源
+             * 要求：properties文件中键的值要和DruidDataSource中的属性名保持一致
+             */
+            ds = DruidDataSourceFactory.createDataSource(pro);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 获取连接的方法
+     * @return
+     */
+    public static Connection getConnection() {
+        Connection connection = null;
+        try {
+            connection = ds.getConnection();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return connection;
+    }
+
+    /**
+     * 关闭连接，将连接对象返还druid数据源
+     * @param connection
+     */
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    /**
+     * 关闭JDBC的资源
+     * @param conn
+     * @param ps
+     * @param rs
+     */
+    public static void close(Connection conn, PreparedStatement ps , ResultSet rs) {
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (ps != null) {
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+
+}
