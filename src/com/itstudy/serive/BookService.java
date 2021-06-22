@@ -5,12 +5,6 @@ import com.itstudy.bean.Page;
 
 import java.util.List;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:29
- * Decription:
- */
 public interface BookService {
 
     /**
