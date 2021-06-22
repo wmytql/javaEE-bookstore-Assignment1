@@ -7,12 +7,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/21
- * Time: 11:53
- * Decription: 购物车
- */
 public class Cart implements Serializable {
 
 
