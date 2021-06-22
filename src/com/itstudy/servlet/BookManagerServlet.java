@@ -12,12 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:32
- * Decription: 管理图书的增删改查
- */
 public class BookManagerServlet extends BaseServlet {
 
     //创建service层实现类
