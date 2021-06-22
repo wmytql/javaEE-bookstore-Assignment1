@@ -7,12 +7,6 @@ import com.itstudy.util.JDBCUtil;
 
 import java.sql.*;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/23
- * Time: 18:50
- * Decription:
- */
 public class OrderDaoImpl extends BaseDao<Order> implements OrderDao {
 
     @Override
