@@ -8,12 +8,6 @@ import com.itstudy.serive.BookService;
 
 import java.util.List;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:31
- * Decription: 图书管理service层
- */
 public class BookServiceImpl implements BookService {
 
 
