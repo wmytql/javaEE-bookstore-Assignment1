@@ -2,12 +2,6 @@ package com.itstudy.bean;
 
 import java.io.Serializable;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/23
- * Time: 18:15
- * Decription:
- */
 public class OrderItem implements Serializable {
 
     private Integer itemId;
