@@ -13,12 +13,6 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 14:18
- * Decription: 整合登录和注册
- */
 public class UserServlet extends BaseServlet {
 
     //创建service层实现类
