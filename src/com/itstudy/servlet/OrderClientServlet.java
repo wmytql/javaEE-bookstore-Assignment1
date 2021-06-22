@@ -12,12 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/23
- * Time: 18:29
- * Decription:
- */
 public class OrderClientServlet extends BaseServlet {
 
     OrderService orderService = new OrderServiceImpl();
