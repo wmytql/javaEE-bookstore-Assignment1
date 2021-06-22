@@ -7,12 +7,6 @@ import com.itstudy.bean.Page;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:27
- * Decription:
- */
 public interface BookDao {
 
     /**
