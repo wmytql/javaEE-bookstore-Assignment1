@@ -11,12 +11,6 @@ import java.util.Collection;
 import java.util.List;
 
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:29
- * Decription: 图书管理DAO层实现类
- */
 public class BookDaoImpl extends BaseDao<Book> implements BookDao {
 
 
