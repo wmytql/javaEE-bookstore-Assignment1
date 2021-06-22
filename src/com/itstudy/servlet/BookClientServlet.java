@@ -11,12 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/19
- * Time: 21:08
- * Decription:
- */
 public class BookClientServlet extends BaseServlet {
 
     private BookService service = new BookServiceImpl();
