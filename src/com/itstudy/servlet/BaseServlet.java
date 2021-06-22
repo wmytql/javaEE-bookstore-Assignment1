@@ -12,12 +12,6 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 15:15
- * Decription:  创建BaseServlet
- */
 public class BaseServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
