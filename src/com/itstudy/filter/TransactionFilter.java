@@ -12,12 +12,6 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/24
- * Time: 11:37
- * Decription:
- */
 public class TransactionFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
