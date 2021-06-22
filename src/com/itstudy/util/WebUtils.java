@@ -2,12 +2,6 @@ package com.itstudy.util;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/19
- * Time: 19:39
- * Decription:
- */
 public class WebUtils {
     public static String getPath(HttpServletRequest request) {
         //获取当前的请求路径requestURI = /day07_BookStoreV2/BookClientServlet
