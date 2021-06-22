@@ -2,12 +2,6 @@ package com.itstudy.dao;
 
 import com.itstudy.bean.Order;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/23
- * Time: 18:50
- * Decription:
- */
 public interface OrderDao {
 
     /**
