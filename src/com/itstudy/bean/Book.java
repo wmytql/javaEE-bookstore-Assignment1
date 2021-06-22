@@ -2,12 +2,6 @@ package com.itstudy.bean;
 
 import java.io.Serializable;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/15
- * Time: 17:20
- * Decription:
- */
 public class Book implements Serializable {
 
     private Integer id;   //图书id
