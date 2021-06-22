@@ -10,12 +10,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/23
- * Time: 19:21
- * Decription:
- */
 public class OrderItemDaoImpl extends BaseDao<Order> implements OrderItemDao {
     @Override
     public int[] batchAddOrderItem(Integer orderId, Collection<CartItem> cartItems) {
