@@ -3,12 +3,6 @@ package com.itstudy.bean;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-/**
- * Author: LUOJIAN
- * Date: 2021/4/21
- * Time: 12:55
- * Decription: 购物项
- */
 public class CartItem implements Serializable {
 
     private Double amount;  //金额
